@@ -1,5 +1,5 @@
 # 说明
-本模块根据[103yiran/XDUthesis_xelatex](https://github.com/103yiran/XDUthesis_xelatex)修改。
+本模版根据[103yiran/XDUthesis_xelatex](https://github.com/103yiran/XDUthesis_xelatex)修改。
 
 # 修改说明
 
