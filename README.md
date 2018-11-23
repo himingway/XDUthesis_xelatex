@@ -5,51 +5,51 @@
 
 ## 1. 修改导师名字太长显示不正确问题
 
-修改前：
+### 修改前：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/1-1.png)
 
-修改后：
+### 修改后：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/1-2.png)
 
 ## 2. 修改页眉
 
-修改前：
+### 修改前：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/2-1.png)
 
-修改后：
+### 修改后：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/2-2.png)
 
 ## 3. 修改摘要中段落之间间距问题
 
-修改前：
+### 修改前：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/3-1.png)
 
-修改后：
+### 修改后：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/3-2.png)
 
 ## 4. 修改图目录和表目录格式问题
 
-修改前：
+### 修改前：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/4-1.png)
 
-修改后：
+### 修改后：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/4-2.png)
 
 ## 5. 修改符号目录格式问题
 
-修改前：
+### 修改前：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/5-1.png)
 
-修改后：
+### 修改后：
 
 ![](https://github.com/himingway/XDUthesis_xelatex/raw/master/screenshoot/5-2.png)
 
