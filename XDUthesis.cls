@@ -159,7 +159,12 @@
 %\setCJKfamilyfont{hei}[AutoFakeBold=1]{SimHei}                              %黑体  hei  
 \setCJKfamilyfont{hei}[AutoFakeBold=true]{SimHei}                              %黑体  hei  
 \newcommand{\hei}{\CJKfamily{hei}}
-  
+
+%% equation
+\renewcommand\normalsize{%
+  \belowdisplayskip=1em
+  \belowdisplayshortskip=2em}
+
 %% family
 \DeclareRobustCommand*{\XDU@font@st}{\song}
 \DeclareRobustCommand*{\XDU@font@ht}{\hei}
