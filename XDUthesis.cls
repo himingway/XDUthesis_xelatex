@@ -94,6 +94,11 @@
 \hb@xt@\@tempdima{\@cftbsnum #1\@cftasnum\hfil}\@cftasnumb}\makeatother}
 \AtEndOfPackage{\makeatletter\@addtoreset{equation}{chapter}\makeatother}
 
+%%%%%%Other%%%%%%%
+\RequirePackage[bottom,perpage,hang]{footmisc}
+\raggedbottom
+%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%
 %% setup packages
 %%%%%%%%%%%%%%%%%%%%
@@ -162,8 +167,10 @@
 
 %% equation
 \renewcommand\normalsize{%
-  \belowdisplayskip=1em
-  \belowdisplayshortskip=2em}
+	\abovedisplayskip = 0pt
+	\belowdisplayskip = 0pt
+	\abovedisplayshortskip=0pt
+	\belowdisplayshortskip=1.65em}
 
 %% family
 \DeclareRobustCommand*{\XDU@font@st}{\song}
@@ -526,9 +533,9 @@ in partial fulfillment of the requirements \\ for the degree of\space\XDU@evalue
     \DeclareCaptionLabelSeparator{twospace}{\ ~}
     \captionsetup{labelsep=twospace} 
     \renewcommand{\captionfont}{\XDU@font@st\XDU@font@zihao{5}}
-    \renewcommand{\cftfignumwidth}{1.5em}
+    \renewcommand{\cftfignumwidth}{2em}
     \renewcommand{\cftfigpresnum}{\hspace{-1.5em}图}
-    \renewcommand{\cfttabnumwidth}{1.5em}
+    \renewcommand{\cfttabnumwidth}{2em}
     \renewcommand{\cfttabpresnum}{\hspace{-1.5em}表}
     \newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
     \addtocontents{lof}{\protect\noaddvspace}
