@@ -1,15 +1,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%  ·ûºÏ GB/T 7714-2005 ¹æ·¶µÄ BibTeX ÑùÊ½ÎÄ¼ş
+%  ç¬¦åˆ GB/T 7714-2005 è§„èŒƒçš„ BibTeX æ ·å¼æ–‡ä»¶
 %
-%  ×÷Õß£º    ºúº£ĞÇ   ÄÏ¾©´óÑ§¼ÆËã»ú¿ÆÑ§Óë¼¼ÊõÏµ
-%  °æ±¾£º    v2.1.0  2014Äê12ÔÂ18ÈÕ
-%  ÏîÄ¿Ö÷Ò³: http://haixing-hu.github.io/nju-thesis/
-%  ĞŞ¶©£º    È¨ÀÚ Î÷°²µç×Ó¿Æ¼¼´óÑ§Í¨ĞÅ¹¤³ÌÏµ
-%  ĞŞ¶©£º    v1.0.0  2015Äê12ÔÂ12ÈÕ
+%  ä½œè€…ï¼š    èƒ¡æµ·æ˜Ÿ   å—äº¬å¤§å­¦è®¡ç®—æœºç§‘å­¦ä¸æŠ€æœ¯ç³»
+%  ç‰ˆæœ¬ï¼š    v2.1.0  2014å¹´12æœˆ18æ—¥
+%  é¡¹ç›®ä¸»é¡µ: http://haixing-hu.github.io/nju-thesis/
+%  ä¿®è®¢ï¼š    æƒç£Š è¥¿å®‰ç”µå­ç§‘æŠ€å¤§å­¦é€šä¿¡å·¥ç¨‹ç³»
+%  ä¿®è®¢ï¼š    v1.0.0  2015å¹´12æœˆ12æ—¥
 %
-%  ²Î¿¼×ÊÁÏ:
-%  [1] ÖĞ¹ú¹ú¼Ò±ê×¼»¯¹ÜÀíÎ¯Ô±»á. GB/T 7714-2005 ÎÄºó²Î¿¼ÎÄÏ××ÅÂ¼¹æÔò[S]. 2005.
+%  å‚è€ƒèµ„æ–™:
+%  [1] ä¸­å›½å›½å®¶æ ‡å‡†åŒ–ç®¡ç†å§”å‘˜ä¼š. GB/T 7714-2005 æ–‡åå‚è€ƒæ–‡çŒ®ç€å½•è§„åˆ™[S]. 2005.
 %  [2] PATASHNIK O. BiBTeXing[R/OL]. 1988[2013-08-27].
 %      ftp://tug.ctan.org/pub/tex-archive/biblio/bibtex/contrib/doc/btxdoc.pdf
 %  [3] PATASHNIK O. Designing BibTeX Styles[R/OL]. 1998[2013-08-27].
@@ -100,19 +100,19 @@ FUNCTION {true} 				{#1}
 FUNCTION {false} 				{#0}
 FUNCTION {debug.enabled} 		{true}
 FUNCTION {cap.volume.en} 		{"Vol~"}
-FUNCTION {cap.volume.zh} 		{"¾í"}
+FUNCTION {cap.volume.zh} 		{"å·"}
 FUNCTION {cap.edition.en} 		{"~ed"}
-FUNCTION {cap.edition.zh} 		{"°æ"}
+FUNCTION {cap.edition.zh} 		{"ç‰ˆ"}
 FUNCTION {cap.anonymous.en} 	{"Anon"}
-FUNCTION {cap.anonymous.zh} 	{"ØıÃû"}
+FUNCTION {cap.anonymous.zh} 	{"ä½šå"}
 FUNCTION {cap.no.address.en} 	{"[S.l.]"}
-FUNCTION {cap.no.address.zh} 	{"[³ö°æµØ²»Ïê]"}
+FUNCTION {cap.no.address.zh} 	{"[å‡ºç‰ˆåœ°ä¸è¯¦]"}
 FUNCTION {cap.no.publisher.en} 	{"[s.n.]"}
-FUNCTION {cap.no.publisher.zh} 	{"[³ö°æÕß²»Ïê]"}
+FUNCTION {cap.no.publisher.zh} 	{"[å‡ºç‰ˆè€…ä¸è¯¦]"}
 FUNCTION {cap.et.al.en} 		{", et~al"}
-FUNCTION {cap.et.al.zh} 		{", µÈ"}
+FUNCTION {cap.et.al.zh} 		{", ç­‰"}
 FUNCTION {cap.translate.en} 	{"~trans"}
-FUNCTION {cap.translate.zh} 	{"Òë"}
+FUNCTION {cap.translate.zh} 	{"è¯‘"}
 FUNCTION {cap.doi.url} 			{"http://dx.doi.org/"}
 FUNCTION {cap.st.en} 			{"st"}
 FUNCTION {cap.nd.en} 			{"nd"}
@@ -1527,7 +1527,7 @@ FUNCTION {standard} {                             % void Entry::standard() {
   true output.series.volume.booktitle             %   output_series_volume_booktitle(true);
   false output.edition                            %   output_edition(false);
   publisher empty$ not {                          %   if (! empty(this.publisher)) {
-    true output.address                           %     output_address(true);
+    false output.address                           %     output_address(true);
     true output.publisher                         %     output_publisher(true);
     cap.comma write$                              %     write(cap_comma);
   } {                                             %   } else {
