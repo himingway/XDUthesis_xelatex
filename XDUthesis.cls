@@ -278,7 +278,8 @@
                          titleformat={},
                          beforeskip={12pt plus 0pt minus 0pt}, 
                          afterskip={6pt}, 
-                         indent={2em} 
+                         indent={2em},
+                         indent={0.85cm}
                         } 
 }
 
