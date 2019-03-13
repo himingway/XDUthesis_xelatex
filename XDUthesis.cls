@@ -317,7 +317,7 @@
    \setlength{\parindent}{0pt}\thispagestyle{empty}% \thispagestyle:changes the style for the current page only
     %\setlength{\topskip}{0pt}\setlength{\parskip}{0pt}\renewcommand{\baselinestretch}{1}\setlength{\baselineskip}{0pt}
     %\rule{\textwidth}{1pt}
-    \vspace*{14.7cm}\\
+    \vspace*{14.2cm}\\
     \begin{minipage}[t][3.2cm]{\textwidth}
         \centering
         \normalfont\XDU@font@st\XDU@font@zihao{2}\setlength{\baselineskip}{30pt}%
@@ -325,6 +325,7 @@
     \end{minipage}
     \vspace*{0.9cm}
     \hspace*{3.5cm}\begin{minipage}[t][3.2cm]{9cm}
+    	\vspace*{1cm}
         \XDU@font@zihao{4}\setlength{\baselineskip}{30pt}%
         \newlength{\linelength}
         \setlength{\linelength}{9cm-4.5em}
