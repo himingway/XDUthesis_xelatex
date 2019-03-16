@@ -137,6 +137,10 @@
 \DeclareRobustCommand{\XDU@underline}
   {\@ifnextchar[\XDU@@underline\CJKunderline }
 
+\def\XDU@@underlinea[#1]#2{\CJKunderline[thickness=1pt] {\hbox to #1{\hfill{#2}\hfill}}}
+\DeclareRobustCommand{\XDU@underlinea}
+  {\@ifnextchar[\XDU@@underlinea\CJKunderline }
+
 \DeclareRobustCommand*{\XDU@bold}{\bfseries}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -329,13 +333,13 @@
         \XDU@font@zihao{4}\setlength{\baselineskip}{30pt}%
         \newlength{\linelength}
         \setlength{\linelength}{9cm-4.5em}
-        \XDU@bold\XDU@font@ht{\XDU@label@cover@author}\XDU@font@st\XDU@underline[\linelength]{\XDU@value@author@name}\\%
+        \XDU@bold\XDU@font@ht{\XDU@label@cover@author}\XDU@font@st\XDU@underlinea[\linelength]{\XDU@value@author@name}\\%
         \setlength{\linelength}{9cm-9.5em}
-        \XDU@bold\XDU@font@ht{\XDU@label@cover@schoolAdvisor}\XDU@font@st\XDU@underline[\linelength]{\XDU@value@schoolAdvisor@name~\XDU@value@schoolAdvisor@title}\\%
+        \XDU@bold\XDU@font@ht{\XDU@label@cover@schoolAdvisor}\XDU@font@st\XDU@underlinea[\linelength]{\XDU@value@schoolAdvisor@name~\XDU@value@schoolAdvisor@title}\\%
         \setlength{\linelength}{9cm-9.5em}
-        \XDU@bold\XDU@font@ht{\XDU@label@cover@industrialAdvisor}\XDU@font@st\XDU@underline[\linelength]{\XDU@value@industrialAdvisor@name~\XDU@value@industrialAdvisor@title}\\%
+        \XDU@bold\XDU@font@ht{\XDU@label@cover@industrialAdvisor}\XDU@font@st\XDU@underlinea[\linelength]{\XDU@value@industrialAdvisor@name~\XDU@value@industrialAdvisor@title}\\%
         \setlength{\linelength}{9cm-6.5em}
-        \XDU@bold\XDU@font@ht{申请学位类别}\XDU@font@st\XDU@underline[\linelength]{\XDU@value@degree}%
+        \XDU@bold\XDU@font@ht{申请学位类别}\XDU@font@st\XDU@underlinea[\linelength]{\XDU@value@degree}%
     %}
     \end{minipage}
     \clearpage\thispagestyle{empty}\setlength{\parindent}{2\ccwd}\cleardoublepage
@@ -347,15 +351,15 @@
   {{\cleardoublepage\setlength{\parindent}{0pt}\thispagestyle{empty}%
 
     \normalfont\XDU@font@st\renewcommand{\baselinestretch}{1.2}\zihao{5}%
-    \rule{0pt}{1.35cm}\parbox[b]{4.5cm}{
-        \XDU@bold\XDU@label@cover@UDC\XDU@underline[73pt]{\XDU@value@thesis@UDC}\par%
+    \rule{0pt}{1.25cm}\hspace{6pt}\parbox[b]{4.5cm}{
+        \XDU@bold\XDU@label@cover@UDC\XDU@underlinea[73pt]{\XDU@value@thesis@UDC}\par%
         \vspace{2pt}%
-        \XDU@bold\XDU@label@cover@classification\XDU@underline[73pt]{\XDU@value@thesis@classification}%
+        \XDU@bold\XDU@label@cover@classification\XDU@underlinea[73pt]{\XDU@value@thesis@classification}%
     }
     \hfill\parbox[b]{4.5cm}{
-        \XDU@bold\XDU@label@cover@studentNo\XDU@underline[83pt]{\XDU@value@thesis@studentNo}\par%
+        \XDU@bold\XDU@label@cover@studentNo\XDU@underlinea[83pt]{\XDU@value@thesis@studentNo}\par%
         \vspace{2pt}%
-        \XDU@bold\XDU@label@cover@confidential\XDU@underline[83pt]{\XDU@value@thesis@confidential}%
+        \XDU@bold\XDU@label@cover@confidential\XDU@underlinea[83pt]{\XDU@value@thesis@confidential}%
     }
 
 \renewcommand{\baselinestretch}{1}%
@@ -424,13 +428,19 @@ in partial fulfillment of the requirements \\ for the degree of\space\XDU@evalue
         \XDU@evalue@author@name\\%
         \hspace*{1.66cm}\begin{minipage}[t][2cm]{6.5cm}
             %\centering
-            \XDU@elabel@cover@advisor\XDU@evalue@schoolAdvisor@name\\
+            \XDU@elabel@cover@advisor\XDU@evalue@schoolAdvisor@name
+
+            \vspace{10pt}
+
             \XDU@elabel@cover@advisor\XDU@evalue@industrialAdvisor@name\\
         \end{minipage}
         \hfill    
         \begin{minipage}[t][2cm]{6.5cm}
             %\centering
-            {Title:}\XDU@evalue@schoolAdvisor@title\\%
+            {Title:}\XDU@evalue@schoolAdvisor@title
+
+            \vspace{10pt}
+            
             {Title:}\XDU@evalue@industrialAdvisor@title\\%
         \end{minipage}
         \XDU@evalue@thesis@submit@date\\%
