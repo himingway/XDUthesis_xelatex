@@ -458,29 +458,32 @@ in partial fulfillment of the requirements \\ for the degree of\space\XDU@evalue
 \DeclareRobustCommand{\XDU@make@statementandcopyright}
   {{\cleardoublepage\setlength{\parindent}{0pt}\thispagestyle{empty}%
   \normalfont\XDU@font@st%
+   \vspace*{-29pt}
    \begin{center}%
    \bfseries\XDU@font@zihao{4}%
      \XDU@label@stat@statement%
    \end{center}%
    \XDU@font@zihao{-4}%
+   \vskip 7pt%
    \hspace*{2em}\setlength{\parindent}{2\ccwd}\XDU@value@stat@statement\setlength{\parindent}{0pt}%
   \vskip 20pt%
-   \hspace*{2em}\XDU@lable@stat@auther\XDU@underline[100pt]{}\hspace*{1em}%
-    \hfill \XDU@lable@stat@date\XDU@underline[100pt]{}\hspace*{1em}
-  \vskip \stretch{6}%
+   \hspace*{2em}\XDU@lable@stat@auther\XDU@underline[110pt]{}\hspace*{4em}%
+    \XDU@lable@stat@date\XDU@underline[110pt]{}\hspace*{1em}
+  \vskip \stretch{4}%
    \begin{center}%
      \bfseries\XDU@font@zihao{4}%
      \XDU@lable@stat@copyright%
    \end{center}%
    \XDU@font@zihao{-4}%
+   \vskip 7pt%
    \hspace*{2em}\setlength{\parindent}{2\ccwd}\XDU@value@stat@copyright\setlength{\parindent}{0pt}%
   \vskip 20pt%
    \normalfont\XDU@font@st\XDU@font@zihao{-4}%
-   \hspace*{2em}\XDU@lable@stat@auther\XDU@underline[100pt]{}\hspace*{1em}%
-    \hfill \XDU@lable@stat@advisor\XDU@underline[100pt]{}\hspace*{1em}%
+   \hspace*{2em}\XDU@lable@stat@auther\XDU@underline[110pt]{}\hspace*{4em}%
+ \XDU@lable@stat@advisor\XDU@underline[110pt]{}\hspace*{1em}%
   \vskip 20pt%
-   \hspace*{2em}\XDU@lable@stat@date\XDU@underline[100pt]{}\hspace*{1em}%
-    \hfill \XDU@lable@stat@date\XDU@underline[100pt]{}\hspace*{1em}%
+   \hspace*{2em}\XDU@lable@stat@date\XDU@underline[110pt]{}\hspace*{4em}%
+     \XDU@lable@stat@date\XDU@underline[110pt]{}\hspace*{1em}%
   \vskip \stretch{1}%
   \clearpage\thispagestyle{empty}%
   \setlength{\parindent}{2\ccwd}\cleardoublepage}}
