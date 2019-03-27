@@ -542,8 +542,12 @@ in partial fulfillment of the requirements \\ for the degree of\space\XDU@evalue
     \renewcommand{\cftlottitlefont}{\XDU@font@st\XDU@font@zihao{-4}}
     \renewcommand{\cfttabpagefont}{\XDU@font@st\XDU@font@zihao{-4}}
 
-    \setlength{\abovecaptionskip}{0.5em}
-    \setlength{\belowcaptionskip}{0pt}
+    \captionsetup[table]{aboveskip=3pt}
+    \captionsetup[table]{belowskip=0pt}
+    \captionsetup[figure]{aboveskip=5pt}
+    \captionsetup[figure]{belowskip=-5pt}
+    %\setlength{\abovecaptionskip}{0.5em}
+    %\setlength{\belowcaptionskip}{0pt}
     %%\renewcommand{\captionlabeldelim}{\ ~}%去冒号
     \DeclareCaptionLabelSeparator{twospace}{\ ~}
     \captionsetup{labelsep=twospace} 
